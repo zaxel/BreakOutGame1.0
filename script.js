@@ -5,8 +5,9 @@ let x = canvas.width/2;
 let y = canvas.height-30;
 
 //pixels bounce move per frame
-let dx = 2;
-let dy = -2;
+let bounceSpeed = 3;
+let dx = bounceSpeed;
+let dy = -bounceSpeed;
 
 //bounce setting
 let bounceColor = "#0095DD";
@@ -191,8 +192,8 @@ function draw() {
             else {
                 x = canvas.width/2;
                 y = canvas.height-30;
-                dx = 2;
-                dy = -2;
+                dx = bounceSpeed;
+                dy = -bounceSpeed;
                 paddleX = (canvas.width-paddleWidth)/2;
             }
         }
